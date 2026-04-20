@@ -1,0 +1,150 @@
+/* CONTENEDOR GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* CABECERA */
+.cabecera-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 15px 30px;
+}
+
+.marca {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.enlace-nav {
+    color: white;
+}
+
+.info-usuario {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.enlace-cerrar {
+    color: white;
+    text-decoration: none;
+    background: red;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+/* CONTENIDO */
+.contenido {
+    padding: 30px;
+}
+
+.etiqueta {
+    font-size: 12px;
+    color: gray;
+}
+
+h1 {
+    margin-top: 5px;
+}
+
+.titulo-dashboard {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-dashboard h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.titulo-dashboard p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* CONTENEDOR TARJETAS */
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* TARJETA */
+.tarjeta {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* HOVER TARJETA */
+.tarjeta:hover {
+    border-color: red;
+    transform: translateY(-5px);
+}
+
+/* ICONO */
+.icono {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* TITULO */
+.tarjeta h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+/* DESCRIPCIÓN */
+.tarjeta p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN */
+.boton-acceder {
+    display: inline-block;
+    background: #e50914;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* HOVER BOTÓN */
+.boton-acceder:hover {
+    background: #b20710;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MÓVIL */
+@media (max-width: 500px) {
+    .tarjeta {
+        padding: 20px;
+    }
+
+    .icono {
+        font-size: 40px;
+    }
+}

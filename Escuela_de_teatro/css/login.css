@@ -1,0 +1,92 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   estilos.css
+   Estilos para el login y el dashboard. Paleta corporativa: blanco/rojo/negro
+   ───────────────────────────────────────────────────────────────────────────── */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #F5F5F5;
+    color: #1A1A1A;
+    min-height: 100vh;
+}
+
+/* ─── PÁGINA DE LOGIN ──────────────────────────────────────────────────────── */
+.pagina-login { display: flex; align-items: center; justify-content: center; padding: 20px; }
+.tarjeta-login { background: #FFFFFF; border: 1px solid #E8E8E8; width: 100%; max-width: 420px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); }
+.franja-roja { height: 4px; background: #DC2626; }
+.cabecera { text-align: center; padding: 32px 24px 16px; }
+.cabecera h1 { font-size: 22px; font-weight: 700; letter-spacing: 4px; color: #1A1A1A; }
+.subtitulo { font-size: 11px; letter-spacing: 5px; color: #DC2626; margin-top: 8px; font-weight: 600; }
+.formulario { padding: 0 32px 24px; display: flex; flex-direction: column; gap: 18px; }
+.campo { display: flex; flex-direction: column; gap: 6px; }
+.campo label { font-size: 10px; letter-spacing: 2px; color: #999; text-transform: uppercase; font-weight: 600; }
+.campo input { padding: 12px 14px; border: 1px solid #E0E0E0; background: #FAFAFA; font-size: 15px; font-family: inherit; color: #1A1A1A; outline: none; transition: all 0.2s; }
+.campo input:focus { border-color: #DC2626; background: #FFFFFF; box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1); }
+.boton-principal { padding: 14px; background: #DC2626; color: #FFFFFF; border: none; font-size: 13px; letter-spacing: 2.5px; font-weight: 500; font-family: inherit; cursor: pointer; transition: opacity 0.2s; margin-top: 4px; }
+.boton-principal:hover { opacity: 0.9; }
+.mensaje-error { margin: 0 32px; padding: 12px; background: #FFF5F5; border-left: 3px solid #DC2626; color: #DC2626; font-size: 13px; text-align: center; }
+.ayuda { text-align: center; color: #999; font-size: 12px; padding: 14px 32px 24px; font-style: italic; }
+.ayuda strong { color: #1A1A1A; }
+
+/* ─── DASHBOARD ────────────────────────────────────────────────────────────── */
+.pagina-dashboard { background: #F5F5F5; }
+.cabecera-dashboard { background: #1A1A1A; color: #FFFFFF; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #DC2626; }
+.marca { font-size: 13px; letter-spacing: 3px; font-weight: 700; }
+.cabecera-dashboard nav { display: flex; gap: 24px; align-items: center; }
+.enlace-nav { font-size: 12px; color: #FFFFFF; opacity: 0.7; }
+.enlace-nav.activo { opacity: 1; color: #DC2626; font-weight: 700; }
+.enlace-cerrar { color: #FFFFFF; text-decoration: none; font-size: 12px; padding: 6px 14px; border: 1px solid #FFFFFF; transition: all 0.2s; }
+.enlace-cerrar:hover { background: #DC2626; border-color: #DC2626; }
+.contenido { max-width: 900px; margin: 0 auto; padding: 32px; }
+.etiqueta { font-size: 11px; letter-spacing: 2px; color: #999; margin-bottom: 4px; }
+.contenido h1 { font-size: 28px; color: #1A1A1A; margin-bottom: 24px; }
+
+/* Avisos */
+.aviso { padding: 14px 16px; margin-bottom: 20px; font-size: 14px; border-left: 4px solid; }
+.aviso-exito { background: #E1F5EE; border-color: #0F6E56; color: #0F6E56; }
+.aviso-warning { background: #FAEEDA; border-color: #BA7517; color: #633806; }
+
+/* Tarjetas resumen */
+.tarjetas { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 32px; }
+.tarjeta { background: #FAFAFA; padding: 16px 18px; border-left: 3px solid; }
+.tarjeta-roja { border-color: #DC2626; }
+.tarjeta-negra { border-color: #1A1A1A; }
+.tarjeta-etiqueta { font-size: 10px; letter-spacing: 1.5px; color: #999; font-weight: 600; margin-bottom: 6px; }
+.tarjeta-valor { font-size: 15px; color: #1A1A1A; font-weight: 700; }
+.tarjeta-valor-grande { font-size: 24px; color: #1A1A1A; font-weight: 700; }
+.tarjeta-valor-grande .apagado { font-size: 14px; color: #999; font-weight: 400; }
+.tarjeta-sub { font-size: 11px; color: #666; margin-top: 3px; }
+
+/* Listado de clases */
+.titulo-seccion { font-size: 14px; letter-spacing: 2px; font-weight: 700; color: #1A1A1A; margin-bottom: 12px; text-transform: uppercase; }
+.vacio { text-align: center; color: #999; padding: 40px 0; font-style: italic; }
+.lista-clases { border-top: 1px solid #E8E8E8; }
+.fila-clase { display: flex; align-items: center; padding: 16px 0; border-bottom: 1px solid #F0F0F0; }
+.caja-fecha { width: 60px; text-align: center; border-right: 1px solid #E8E8E8; padding-right: 14px; margin-right: 16px; }
+.dia-semana { font-size: 10px; color: #999; font-weight: 700; letter-spacing: 1px; }
+.dia-semana.hoy { color: #DC2626; }
+.dia-numero { font-size: 22px; color: #1A1A1A; font-weight: 700; }
+.mes { font-size: 10px; color: #999; }
+.info-clase { flex: 1; }
+.nombre-clase { font-size: 14px; color: #1A1A1A; font-weight: 700; margin-bottom: 3px; }
+.detalles-clase { font-size: 12px; color: #666; }
+.plazas-ok { color: #0F6E56; font-weight: 700; }
+.plazas-llenas { color: #DC2626; font-weight: 700; }
+
+/* Zona de badges */
+.badge-zona { margin-left: 12px; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.form-inline { margin: 0; }
+
+/* Badges */
+.badge { display: inline-block; padding: 5px 11px; font-size: 10px; font-weight: 700; letter-spacing: 1px; border: 1px solid; font-family: inherit; }
+.badge-hoy { background: #FFF5F5; color: #DC2626; border-color: #DC2626; }
+.badge-manana { background: #F5F5F5; color: #666; border-color: #E0E0E0; }
+.badge-accion { background: #FAFAFA; color: #DC2626; border-color: #DC2626; cursor: pointer; transition: all 0.2s; }
+.badge-accion:hover { background: #DC2626; color: #FFFFFF; }
+.badge-avisada { background: #E1F5EE; color: #0F6E56; border-color: #0F6E56; }
+.badge-anular { background: #FFFFFF; color: #999; border-color: #CCC; cursor: pointer; font-size: 9px; padding: 3px 8px; transition: all 0.2s; }
+.badge-anular:hover { background: #DC2626; color: #FFFFFF; border-color: #DC2626; }
